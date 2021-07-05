@@ -1,0 +1,68 @@
+@import "../../variables/colors.scss";
+@import "../../variables/layoutProportions.scss";
+$cell-width: 15rem;
+$cell-gap: 2rem;
+$menuBarHeight:5vh;
+$headerFontSize:1.2rem;
+.fileTableWrapper {
+  background-color: $bg-color; 
+  box-sizing: border-box;
+  width:100vw;
+  height:(100vh-$navHeight); 
+  display:flex;
+  flex-direction: column;
+  align-items:stretch;
+  justify-content:stretch;
+  overflow-y:auto;
+}
+.fileMenuBar {
+  height: $menuBarHeight;
+  background-color: $bg-color-2;
+  box-sizing: border-box;
+  padding: 0.6rem;
+}
+.fileTable {
+  overflow-x:auto;
+  height:auto;
+  padding: 1em 0; 
+}
+
+.fileView {
+  padding: 0 1em ;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-shrink: 0;
+	flex-grow: 0;
+
+	> * {
+		width: $cell-width;
+    flex-basis: $cell-width;
+    margin-right: $cell-gap;
+	}
+
+	> input.text {
+		box-sizing: border-box;
+		font-size: 1rem;
+	}
+}
+.fileTable .fileView {
+  margin-bottom: 1em;
+
+}
+
+.fileViewHeader {
+	font-size: $headerFontSize;
+  box-sizing: border-box;
+  padding-top:1em;
+  padding-bottom:0.5em;
+  border-bottom:1px solid $accent-main; 
+  background-color: $bg-color-2;
+  width:fit-content;
+  h3 {
+    box-sizing: border-box;
+    text-align: center;
+    height:100%;
+  }
+
+}

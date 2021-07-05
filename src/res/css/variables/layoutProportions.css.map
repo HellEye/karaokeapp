@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "layoutProportions.css",
+	"sources": [
+		"../../scss/variables/layoutProportions.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

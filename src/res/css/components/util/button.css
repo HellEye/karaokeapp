@@ -1,0 +1,28 @@
+.button {
+  border: 0.2em solid #4b4237;
+  border-radius: 0.3em;
+  color: #ffffff;
+  padding: 0.3em;
+  font-size: 1.1em;
+  background-color: #4b4237;
+  transition: background-color 0.15s ease-in-out; }
+  .button .light {
+    background-color: #0844a4;
+    border-color: #0844a4; }
+  .button .dark {
+    background-color: #232323;
+    border-color: #232323; }
+  .button .error {
+    background-color: #840705;
+    border-color: #840705; }
+
+.button:hover {
+  background-color: #332d26; }
+  .button:hover .light {
+    background-color: #06347d; }
+  .button:hover .dark {
+    background-color: #0f0f0f; }
+  .button:hover .error {
+    background-color: #5d0504; }
+
+/*# sourceMappingURL=button.css.map */

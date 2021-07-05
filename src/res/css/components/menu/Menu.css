@@ -1,0 +1,30 @@
+.menu .content {
+  display: grid;
+  grid-template-rows: 3em 3em 3em;
+  grid-template-columns: 10em auto;
+  grid-template-areas: "top top" "browse path" "link empty";
+  gap: 1em; }
+  .menu .content h1 {
+    grid-area: top; }
+  .menu .content input, .menu .content h3 {
+    grid-area: path; }
+  .menu .content button {
+    grid-area: browse; }
+  .menu .content a {
+    grid-area: link; }
+
+.menu .pathSelect {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .menu .pathSelect :first-child {
+    margin-right: 3em; }
+
+.menu a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  align-items: center; }
+
+/*# sourceMappingURL=Menu.css.map */

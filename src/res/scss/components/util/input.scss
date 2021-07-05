@@ -1,0 +1,25 @@
+@import "../../variables/colors.scss";
+
+input {
+  background-color: $color-bg-normal;
+  text-align: center;
+  box-sizing: border-box; 
+  border:none;
+  padding: 0.8em 0.3em ;
+  border-radius: 0.2em; 
+  color:$color-font;
+  .light {
+    background-color: $color-bg-light;
+  }
+  .dark { 
+    background-color: $color-bg-dark;
+  }
+  .error {
+    background-color: $color-bg-error;
+  }
+}
+
+input:focus {
+  outline: 0.2em solid $accent-main;
+}
+

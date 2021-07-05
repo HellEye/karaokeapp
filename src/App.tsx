@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+//import "./res/css/index.css"
+import Navbar from "./components/layout/Navbar/Navbar.style"
+import Content from "./components/layout/Content/Content"
+import { BrowserRouter } from "react-router-dom"
+import { GlobalStyle } from "./Styles/GlobalStyle"
+import PromptManager from "components/util/Prompt/PromptManager.style"
+// import mainStore from "./store/mainStore"
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<BrowserRouter>
+			<GlobalStyle />
+			<PromptManager />
+			<div className="App">
+				<Navbar />
+				<Content />
+			</div>
+		</BrowserRouter>
+	)
 }
 
-export default App;
+export default App

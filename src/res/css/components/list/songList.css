@@ -1,0 +1,123 @@
+span.bold {
+  font-weight: bold; }
+
+span.italic {
+  font-style: italic; }
+
+.songList {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative; }
+  .songList .header {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2em;
+    min-height: 2.5em;
+    max-height: 2.5em;
+    padding-right: 2em;
+    margin-bottom: 0.3em;
+    align-items: center;
+    justify-content: center; }
+  .songList .list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    position: relative;
+    padding-top: 0.2em; }
+    .songList .list .listElem {
+      display: flex;
+      flex-direction: row;
+      font-size: 1.1em;
+      margin-right: 1em;
+      border-radius: 0.5em;
+      background-color: #0844a4;
+      margin-bottom: 0.5em;
+      padding: 0.6em 2em;
+      padding-right: 1em; }
+    .songList .list .listElem.error {
+      background-color: #840705; }
+
+.header .search input {
+  padding: 0.5em 0.8em; }
+
+.header .filter {
+  margin-left: auto;
+  height: fit-content;
+  border-radius: 0.3em;
+  padding: 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.4em;
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer; }
+
+.header .filter:hover {
+  background-color: #0844a4; }
+
+.songList.content {
+  padding-right: 0.1em; }
+
+.songList .listElem .icons {
+  display: flex;
+  flex-direction: row;
+  margin-right: 0;
+  margin-left: auto;
+  width: 9rem;
+  justify-content: flex-end;
+  align-items: center; }
+  .songList .listElem .icons > div,
+  .songList .listElem .icons > a {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.6rem; }
+  .songList .listElem .icons :last-child {
+    margin-left: 0.2rem; }
+
+.contentBottom {
+  display: flex;
+  flex-direction: row;
+  height: fit-content; }
+  .contentBottom .button {
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+    width: 13em;
+    justify-content: center;
+    align-items: center;
+    background-color: #0844a4;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 0.4em;
+    padding: 0.5em;
+    box-sizing: border-box; }
+    .contentBottom .button .icon {
+      font-size: 1.5em;
+      margin-right: 0.3em; }
+
+/* width */
+.list::-webkit-scrollbar {
+  width: 6px;
+  right: 0;
+  position: absolute; }
+
+/* Track */
+.list::-webkit-scrollbar-track {
+  background: #232323;
+  border-radius: 10px; }
+
+/* Handle */
+.list::-webkit-scrollbar-thumb {
+  background: #4b4237;
+  border-radius: 10px;
+  max-height: 5px;
+  transition: background-color 0.15s ease-in-out; }
+
+/* Handle on hover */
+.list::-webkit-scrollbar-thumb:hover {
+  background: #0844a4; }
+
+/*# sourceMappingURL=songList.css.map */

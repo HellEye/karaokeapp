@@ -1,43 +1,98 @@
 {
-  "name": "karaokeapp",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "@types/jest": "^26.0.23",
-    "@types/node": "^12.20.15",
-    "@types/react": "^17.0.11",
-    "@types/react-dom": "^17.0.8",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.3.4",
-    "web-vitals": "^1.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "karaokeadmin",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@electron/remote": "^1.1.0",
+		"@material-ui/icons": "^4.11.2",
+		"@testing-library/jest-dom": "^5.14.1",
+		"@testing-library/react": "^11.2.7",
+		"@testing-library/user-event": "^12.8.3",
+		"@types/css": "^0.0.31",
+		"@types/electron": "^1.6.10",
+		"@types/file-url": "^3.0.2",
+		"@types/jest": "^26.0.23",
+		"@types/node": "^15.12.4",
+		"@types/react": "^17.0.11",
+		"@types/react-dom": "^17.0.8",
+		"@types/react-router-dom": "^5.1.7",
+		"@types/react-sound": "^1.2.2",
+		"@types/styled-components": "^5.1.10",
+		"autoprefixer": "^10.2.6",
+		"charset-detector": "0.0.2",
+		"chokidar-cli": "^2.1.0",
+		"chonky": "^2.2.0",
+		"cross-env": "^7.0.3",
+		"dataurl": "^0.1.0",
+		"detect-character-encoding": "^0.8.0",
+		"electron-audio-conversion": "^0.1.0",
+		"electron-devtools-installer": "^3.2.0",
+		"encoding": "^0.1.13",
+		"file-url": "^4.0.0",
+		"i18next": "^20.3.1",
+		"jschardet": "^3.0.0",
+		"material-design-icons-iconfont": "^6.1.0",
+		"material-ui-toggle-icon": "^1.1.2",
+		"mdi-react": "^7.5.0",
+		"mobx": "^6.3.2",
+		"mobx-devtools": "^0.9.27",
+		"mobx-react": "^7.2.0",
+		"mobx-remotedev": "^0.3.6",
+		"nanoid": "^3.1.23",
+		"node-glob": "^1.2.0",
+		"node-mp3-player": "^1.0.3",
+		"npm-run-all": "^4.1.5",
+		"polished": "^4.1.3",
+		"postcss-cli": "^8.3.1",
+		"qin-player": "^0.16.0",
+		"react": "^16.14.0",
+		"react-collapsible": "^2.8.3",
+		"react-dom": "^16.14.0",
+		"react-i18next": "^11.11.0",
+		"react-localization": "^1.0.17",
+		"react-player": "^2.9.0",
+		"react-router": "^5.2.0",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "4.0.3",
+		"react-sound": "^1.2.0",
+		"react-tabbordion": "^1.0.6",
+		"react-window": "^1.8.6",
+		"react-window-infinite-loader": "^1.0.7",
+		"styled-components": "^5.3.0",
+		"typescript": "^4.3.4",
+		"wait-on": "^5.3.0",
+		"watch": "^1.0.2",
+		"web-vitals": "^1.1.2"
+	},
+	"scripts": {
+		"react:start": "react-scripts start",
+		"build-task:scss-compile": "node-sass-chokidar --source-map true -rw src/res/scss/ -o src/res/css",
+		"sass:build": "npm-run-all -p build-task:*",
+		"sass:watch": "chokidar 'src/scss/**/*.s{c,a}ss' -c 'npm run sass:build'",
+		"dev:sass": "npm-run-all -p sass:*",
+		"sass:run": "npm run build-task:scss-compile",
+		"electron:start": "wait-on tcp:5678 && electron .",
+		"electron:build": "",
+		"dev": "concurrently -t \"hh:mm:ss\" --prefix \"{time} {name}\" --names \"NPM ,ELEC\" --restart-tries=-1 --restart-after=1000 \"cross-env BROWSER=none PORT=5678 npm run react:start\" \"cross-env NODE_ENV=development npm run electron:start\""
+	},
+	"main": "public/main.js",
+	"homepage": "./",
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
 }

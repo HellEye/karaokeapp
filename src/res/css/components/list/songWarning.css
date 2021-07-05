@@ -1,0 +1,27 @@
+.warning {
+  position: relative; }
+  .warning .floatingBox {
+    max-width: 30vw;
+    min-width: 20em;
+    position: absolute;
+    right: 50%;
+    z-index: 1;
+    background-color: #232323;
+    border-radius: 1em;
+    border: 2px solid #ffffff;
+    padding: 1em; }
+    .warning .floatingBox ul {
+      padding-left: 0;
+      list-style-type: none;
+      margin-bottom: 0.2rem; }
+      .warning .floatingBox ul li {
+        margin-bottom: 0.2rem; }
+    .warning .floatingBox .errorList {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0.5em;
+      align-items: center; }
+      .warning .floatingBox .errorList .tags {
+        margin-left: 0.5em; }
+
+/*# sourceMappingURL=songWarning.css.map */

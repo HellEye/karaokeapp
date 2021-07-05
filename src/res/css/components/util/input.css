@@ -1,0 +1,19 @@
+input {
+  background-color: #4b4237;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+  padding: 0.8em 0.3em;
+  border-radius: 0.2em;
+  color: #ffffff; }
+  input .light {
+    background-color: #0844a4; }
+  input .dark {
+    background-color: #232323; }
+  input .error {
+    background-color: #840705; }
+
+input:focus {
+  outline: 0.2em solid #9c27b0; }
+
+/*# sourceMappingURL=input.css.map */

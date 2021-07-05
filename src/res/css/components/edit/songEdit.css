@@ -1,0 +1,22 @@
+.songEdit .content {
+  overflow-x: auto; }
+  .songEdit .content .editGrid {
+    display: grid;
+    width: 50em;
+    grid-template-columns: 15em 50em;
+    gap: 1em; }
+
+.editGrid {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.3em; }
+  .editGrid h3 {
+    padding-left: 1em;
+    background-color: #4b4237;
+    display: flex;
+    align-items: center; }
+  .editGrid input.text {
+    font-size: 1.2em;
+    background-color: #0844a4; }
+
+/*# sourceMappingURL=songEdit.css.map */

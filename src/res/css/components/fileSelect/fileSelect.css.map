@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "fileSelect.css",
+	"sources": [
+		"../../../scss/components/fileSelect/fileSelect.scss",
+		"../../../scss/variables/colors.scss"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,WAAW,CAAC;EACV,OAAO,EAAE,GAAG;EACZ,OAAO,EAAC,IAAI;EACZ,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,sBAAqB;EAC5B,MAAM,EAAC,IAAI,GAEZ;;AAED,AAAA,WAAW,GAAG,GAAG,CAAC;EAChB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,KAAK,EAAE,GAAG;EACV,MAAM,EAAC,QAAQ;EACf,eAAe,EAAE,aAAa,GAI/B;EATD,AAME,WANS,GAAG,GAAG,GAMb,KAAK,CAAC;IACN,KAAK,EAAE,GAAG,GACX;;AAGH,AAAA,WAAW,GAAG,CAAC,CAAC;EACd,UAAU,EAAE,GAAG,GAChB"
+}

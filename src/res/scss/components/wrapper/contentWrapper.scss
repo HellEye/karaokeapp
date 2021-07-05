@@ -1,0 +1,29 @@
+@import "../../variables/colors.scss";
+@import "../../variables/layoutProportions.scss";
+
+$wrapperHeight: 100vh - $navHeight;
+$bottomHeight: $wrapperHeight / 6; 
+$mainHeight: $bottomHeight * 5;
+
+.content {
+	box-sizing: border-box;
+	height:$mainHeight;
+	border-radius: 1em;
+	background-color: $color-bg-dark;
+	padding: 1em;
+}
+
+.contentBottom {
+  padding: 1em;
+	height: $bottomHeight;
+	box-sizing: border-box;
+}
+
+.contentWrapper {
+	height: $wrapperHeight;
+	max-height: $wrapperHeight;
+	background-color: $color-bg-normal;
+	box-sizing: border-box;
+	padding: 1em;
+  display:grid;
+}

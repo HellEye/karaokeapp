@@ -1,0 +1,77 @@
+{
+	"test": "Jestem testem",
+
+	"menu": {
+		"menu": "Menu główne",
+		"browse": "Przeglądaj...",
+		"list": "Lista utworów"
+	},
+	"list": {
+		"list": "Lista utworów",
+		"songsDetected": "Wykryto utworów",
+		"cloudUpload": "Wgraj utwory",
+		"cloudDownload": "Pobierz bazę"
+	},
+	"errors": {
+		"missingTrack": {
+			"name": "Brakujące wymagane informacje o podkładzie:"
+		},
+		"missingBPM": {
+			"name": "Brakujące wymagane informacje: BPM:"
+		},
+		"missingTitleArtist": {
+			"name": "Brakujące wymagane informacje o tytule lub artyście:",
+			"name_plural": "Brakujące wymagane informacje o tytule i artyście"
+		},
+		"duet": {
+			"name": "Plik zawiera problematyczny tag duetu:"
+		},
+		"noBackgroundFile": {
+			"name": "Brakujące lub błędne informacje o tle:"
+		},
+		"noCover": {
+			"name": "Brakujące lub błędne informacje o okładce:"
+		},
+		"incompleteMetadata": {
+			"name": "Brakujące informacje:"
+		},
+		"multipleErrors": "Wykryto wiele problemów:"
+	},
+	"tags": {
+		"ARTIST": "Wykonawca",
+		"TITLE": "Tytuł",
+		"BPM": "BPM",
+		"COVER": "Okładka",
+		"BACKGROUND": "Tło",
+		"GENRE": "Gatunek",
+		"YEAR": "Rok",
+		"EDITION": "Edycja",
+		"MP3": "MP3",
+		"CREATOR": "Twórca",
+		"LANGUAGE": "Język",
+		"ALBUM": "Album",
+		"VIDEO": "Video",
+		"GAP": "Opóźnienie",
+		"VIDEOGAP": "Opóźnienie video"
+	},
+
+	"edit": {
+		"edit": "Edycja utworu",
+		"basicTags": "Tagi podstawowe",
+		"presentationTags": "Tagi prezentacji",
+		"searchTags": "Tagi wyszukiwania",
+		"syncTags": "Tagi synchronizacji",
+		"otherTags": "Pozostałe",
+		"mediaPreview": "Podgląd mediów",
+		"addTag": "Dodaj tag",
+		"newTagField": "Podaj nazwę",
+		"newTagName": "Nowy tag",
+		"end": "Zakończ",
+		"saveAndExit": "Zapisz do pliku i wyjdź",
+		"exitNoSave": "Wyjdź bez zapisywania",
+		"promptTitle": "Uwaga",
+		"promptSubtitle": "Czy na pewno chcesz zamknąć tę stronę?\nWprowadzone zmiany będą zapisane do momentu ponownego wczytania aplikacji lub listy piosenek"
+	},
+	"search": "Wyszukaj",
+	"cancel": "Anuluj"
+}

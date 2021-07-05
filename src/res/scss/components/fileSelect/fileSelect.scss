@@ -1,0 +1,25 @@
+@import "../../variables/colors.scss";
+
+.fileSelect {
+  padding: 3em;
+  display:flex;
+  flex-direction: column;
+  width: clamp(40em,60%, 60em);
+  margin:auto;
+ 
+}
+
+.fileSelect > div {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  margin:1em auto;
+  justify-content: space-between;
+  > input {
+    width: 30%;
+  }
+} 
+
+.fileSelect > * {
+  margin-top: 1em;
+}

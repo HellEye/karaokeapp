@@ -1,0 +1,75 @@
+{
+	"test": "I'm a test",
+	"menu": {
+		"menu": "Main menu",
+		"browse": "Browse...",
+		"list": "Song list"
+	},
+	"list": {
+		"list": "Song list",
+		"songsDetected": "Detected tracks",
+		"cloudUpload": "Upload tracks",
+		"cloudDownload": "Download base"
+	},
+	"errors": {
+		"missingTrack": {
+			"name": "Missing required information about the track"
+		},
+		"missingBPM": {
+			"name": "Missing required information about BPM"
+		},
+		"missingTitleArtist": {
+			"name": "Missing required information about title or artist:",
+			"name_plural": "Missing required information about title and artist"
+		},
+		"duet": {
+			"name": "File contains problematic duet tags:"
+		},
+		"noBackgroundFile": {
+			"name": "Missing or incorrect information about the background:"
+		},
+		"noCover": {
+			"name": "Missing or incorrect information about the cover:"
+		},
+		"incompleteMetadata": {
+			"name": "Missing information:"
+		},
+		"multipleErrors": "Detected multiple issues:"
+	},
+	"tags": {
+		"ARTIST": "Artist",
+		"TITLE": "Title",
+		"BPM": "BPM",
+		"COVER": "Cover",
+		"BACKGROUND": "Background",
+		"GENRE": "Genre",
+		"YEAR": "Year",
+		"EDITION": "Edition",
+		"MP3": "MP3",
+		"CREATOR": "Creator",
+		"LANGUAGE": "Language",
+		"ALBUM": "Album",
+		"VIDEO": "Video",
+		"GAP": "Delay",
+		"VIDEOGAP": "Video delay"
+	},
+	"edit": {
+		"edit": "Edit song",
+		"basicTags": "Basic tags",
+		"presentationTags": "Presentation tags",
+		"searchTags": "Search tags",
+		"syncTags": "Synchronization tags",
+		"otherTags": "Other",
+		"mediaPreview": "Media preview",
+		"addTag": "Add tag",
+		"newTagName": "New tag",
+		"newTagField": "Insert name",
+		"end": "End",
+		"saveAndExit": "Save to file and exit",
+		"exitNoSave": "Exit without saving",
+		"promptTitle": "Warning",
+		"promptSubtitle": "Do you want to close the page?\nChanges you made will be saved regardless until you reload the application"
+	},
+	"search": "Search",
+	"cancel": "Cancel"
+}

@@ -1,0 +1,54 @@
+.fileTableWrapper {
+  background-color: #a9c2be;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  overflow-y: auto; }
+
+.fileMenuBar {
+  height: 5vh;
+  background-color: #8cb6af;
+  box-sizing: border-box;
+  padding: 0.6rem; }
+
+.fileTable {
+  overflow-x: auto;
+  height: auto;
+  padding: 1em 0; }
+
+.fileView {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  flex-grow: 0; }
+  .fileView > * {
+    width: 15rem;
+    flex-basis: 15rem;
+    margin-right: 2rem; }
+  .fileView > input.text {
+    box-sizing: border-box;
+    font-size: 1rem; }
+
+.fileTable .fileView {
+  margin-bottom: 1em; }
+
+.fileViewHeader {
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #9c27b0;
+  background-color: #8cb6af;
+  width: fit-content; }
+  .fileViewHeader h3 {
+    box-sizing: border-box;
+    text-align: center;
+    height: 100%; }
+
+/*# sourceMappingURL=fileView.css.map */

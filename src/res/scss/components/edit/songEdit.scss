@@ -1,0 +1,29 @@
+@import "../../variables/colors";
+
+.songEdit {
+	.content {
+    overflow-x:auto;
+    .editGrid {
+		display: grid;
+		width: 50em;
+		grid-template-columns: 15em 50em;
+		gap: 1em;
+	}}
+
+}
+
+.editGrid {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 0.3em;
+	h3 {
+    padding-left: 1em;
+    background-color: $color-bg-normal;
+    display: flex;
+    align-items: center;
+	}
+	input.text {
+    font-size: 1.2em;
+		background-color: $color-bg-light;
+	}
+}

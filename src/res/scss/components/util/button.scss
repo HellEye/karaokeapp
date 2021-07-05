@@ -1,0 +1,37 @@
+@import "../../variables/colors.scss";
+
+.button {
+	border: 0.2em solid $color-bg-normal;
+	border-radius: 0.3em;
+	color: $color-font;
+	padding: 0.3em;
+  font-size: 1.1em;
+	background-color: $color-bg-normal;
+	transition: background-color 0.15s ease-in-out;
+	.light {
+		background-color: $color-bg-light;
+    border-color: $color-bg-light;
+	} 
+	.dark {
+		background-color: $color-bg-dark;
+    border-color: $color-bg-dark;
+	}
+	.error {
+		background-color: $color-bg-error;
+    border-color: $color-bg-error;
+	}
+}
+
+.button:hover {
+	background-color: darken($color-bg-normal, 8);
+	.light {
+		background-color: darken($color-bg-light, 8);
+	}
+	.dark {
+		background-color: darken($color-bg-dark, 8);
+	}
+	.error {
+		background-color: darken($color-bg-error, 8);
+	}
+}
+

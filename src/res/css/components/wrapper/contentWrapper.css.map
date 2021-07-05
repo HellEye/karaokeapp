@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "contentWrapper.css",
+	"sources": [
+		"../../../scss/components/wrapper/contentWrapper.scss",
+		"../../../scss/variables/colors.scss",
+		"../../../scss/variables/layoutProportions.scss"
+	],
+	"names": [],
+	"mappings": "AAMA,AAAA,QAAQ,CAAC;EACR,UAAU,EAAE,UAAU;EACtB,MAAM,EAHM,IAAiB;EAI7B,aAAa,EAAE,GAAG;EAClB,gBAAgB,ECCF,OAAO;EDArB,OAAO,EAAE,GAAG,GACZ;;AAED,AAAA,cAAc,CAAC;EACb,OAAO,EAAE,GAAG;EACb,MAAM,EAZQ,IAAkB;EAahC,UAAU,EAAE,UAAU,GACtB;;AAED,AAAA,eAAe,CAAC;EACf,MAAM,EAlBS,IAAkB;EAmBjC,UAAU,EAnBK,IAAkB;EAoBjC,gBAAgB,ECdA,OAAO;EDevB,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,GAAG;EACX,OAAO,EAAC,IAAI,GACb"
+}
