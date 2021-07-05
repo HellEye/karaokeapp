@@ -10,9 +10,10 @@ import { InputLabel } from "../EditField/EditField"
 interface Props {
 	className?: string
 	details: songDetails
+	onAdd?: () => void
 }
 
-const AddTag: FC<Props> = ({ className, details }) => {
+const AddTag: FC<Props> = ({ className, details, onAdd }) => {
 	const [tagName, setTagName] = useState("")
 	const [adding, setAdding] = useState(false)
 	const { t } = useTranslation()

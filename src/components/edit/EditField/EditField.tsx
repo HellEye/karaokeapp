@@ -16,6 +16,7 @@ type Props = {
 	optional?: boolean
 	severity: number
 	deletable?: boolean
+	onChange?: () => void
 }
 
 export const InputLabel = styled.h3<{ color: string }>`
@@ -36,6 +37,7 @@ const EditField: FC<Props> = observer(
 		optional,
 		severity,
 		deletable,
+		onChange: onChangeCallback,
 	}) => {
 		// const [value, setValue] = useState(props.details[props.tag])
 		const [value, setValue] = useStoreMap<string>(details, tag)
@@ -44,6 +46,7 @@ const EditField: FC<Props> = observer(
 		}
 		const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 			setValue(e.target.value)
+			onChangeCallback?.()
 		}
 		return (
 			<div className={className}>

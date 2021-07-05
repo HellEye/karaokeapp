@@ -24,6 +24,9 @@ const SongEdit = ({ className }: { className?: string }) => {
 		//eslint-disable-next-line
 		[song?.details, song?.details?.unknownTags]
 	)
+	const onMakeChanges = () => {
+		setChangesMade(true)
+	}
 
 	const saveAndExit = () => {
 		song.saveToFile().then(() => {
@@ -89,12 +92,17 @@ const SongEdit = ({ className }: { className?: string }) => {
 												isFile={tag.isFile}
 												optional={tag.optional}
 												deletable={i === a.length - 1}
+												onChange={onMakeChanges}
 											/>
 										)
 									})
 									.concat(
 										i === a.length - 1 ? (
-											<AddTag key="addTag" details={details} />
+											<AddTag
+												key="addTag"
+												details={details}
+												onAdd={onMakeChanges}
+											/>
 										) : null
 									)}
 							</div>
